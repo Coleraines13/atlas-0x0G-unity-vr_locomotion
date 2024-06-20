@@ -71,4 +71,9 @@ public class ZombieAI : MonoBehaviour
         Debug.Log("Attacking player. Attack cooldown started.");
         // add damage later
     }
+
+    public bool IsAttacking()
+    {
+        return animator.GetBool("isAttacking");
+    }
 }

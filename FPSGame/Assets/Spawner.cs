@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject objectToSpawn; // The object to spawn
-    public Transform[] spawnPoints;  // Array of possible spawn points
-    public float spawnInterval = 2f; // Time interval between spawns
+    public GameObject objectToSpawn; 
+    public Transform[] spawnPoints;  
+    public float spawnInterval = 2f; 
 
     private bool isSpawning = false;
 
-    // Method to start spawning
+    
     public void StartSpawning()
     {
         if (!isSpawning)
@@ -18,7 +18,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    // Method to stop spawning
+    
     public void StopSpawning()
     {
         if (isSpawning)
@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    // Method to spawn an object
+    
     void SpawnObject()
     {
         int randomIndex = Random.Range(0, spawnPoints.Length);
